@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>https://www.codingacademy.com</title>
+<style type="text/css">
+h1,h2,h4,label {
+   color : white;
+   text-align : center;
+}
+body {
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtOkYs3YtPcFOhw-LgDDgxwhSBq5N0jn7T35EMXBx6gy9WKrOcpUcTOB73&s=10");
+  background-attachment:fixed;
+  background-size:100%100%;
+  backdrop-filter:blur(0.5px)
+}
+</style>
+
+</head>
+
+<body>
+<h1>Coding Academy<sup>&reg;</sup></h1>
+<h4><marquee> * An Initiative By S.Divyadharshan * We build super-coders * Learn coding languages in low cost * Worrying about PUBG Ban in India? Don't Worry. Learn Coding and create your own Games * </marquee></h4>
+<br>
+<h2>Sign Up</h2>
+<div style="text-align:center">
+<form>
+<label>FIRST NAME : <input id="fn" type="name" placeholder="First Name"></label>
+<br><br>
+<label>LAST NAME : <input id="ln" type="name" placeholder="Last Name"></label>
+<br><br>
+<label>DATE OF BIRTH : <input id="d" type="date" min="1914-12-31" max="2016-12-31"></label>
+<br><br>
+<label>Course : </label>
+<select>
+<option>Python</option>
+<option>HTML+CSS+JAVASCRIPT</option>
+<option>C++</option>
+<option>Java</option>
+</select>
+<br><br>
+<label>E-MAIL : <input id="ema" type="email" placeholder="example@gmail.com"></label>
+<br><br>
+<label>Password : <input id="pa" type="password"><input type="checkbox" onclick="pass()">Show</label>
+<br><br>
+<input id="sub" type="button" value="SUBMIT" onclick="c()">
+<br><br><br>
+<a href="D://Codes//HTML Codes//web.html">
+<input id="bu" type="button" value="SIGN IN" disabled> </a>
+<br><br>
+<script>
+
+function c() {
+   var a = document.getElementById("fn").value;
+   var b = document.getElementById("ln").value;
+   var c = document.getElementById("d").value;
+   var d = document.getElementById("ema").value;
+   var e = document.getElementById("pa").value;
+   var f = document.getElementById("sub");
+   if (a == "") {
+       alert("Enter your First Name!");
+   }
+   else if (b == "") {
+       alert("Enter your Last Name!");
+   }
+   else if (c == "") {
+       alert("Enter your Date of Birth!");
+   }
+   else if (d == "") {
+      alert("Enter your Email ID!");
+   } 
+   else if (e == "") {
+      alert("Set Password!");
+   }
+   else {
+      f.type = "reset";
+      document.getElementById("bu").disabled=false;
+   }
+}
+
+function pass() {
+  var pa = document.getElementById("pa");
+  if (pa.type=="password") {
+      pa.type="text";
+  }
+  else {
+  	pa.type="password";
+  }
+}	
+</script>
+
+</form>
+</div>
+</body>
+
+</html>
