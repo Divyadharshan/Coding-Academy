@@ -27,13 +27,11 @@ body {
 <h2>Sign Up</h2>
 <div style="text-align:center">
 <form>
-<label>FIRST NAME : <input id="fn" type="name" placeholder="First Name"></label>
-<br><br>
-<label>LAST NAME : <input id="ln" type="name" placeholder="Last Name"></label>
+<label>FULL NAME : <input id="fn" type="name" placeholder="Full Name"></label>
 <br><br>
 <label>DATE OF BIRTH : <input id="d" type="date" min="1914-12-31" max="2016-12-31"></label>
 <br><br>
-<label>Course : </label>
+<label>COURSE : </label>
 <select>
 <option>Python</option>
 <option>HTML+CSS+JAVASCRIPT</option>
@@ -43,27 +41,25 @@ body {
 <br><br>
 <label>E-MAIL : <input id="ema" type="email" placeholder="example@gmail.com"></label>
 <br><br>
-<label>Password : <input id="pa" type="password"><input type="checkbox" onclick="pass()">Show</label>
+<label>PASSWORD : <input id="pa" type="password"><input type="checkbox" onclick="pass()">Show</label>
 <br><br>
-<input id="sub" type="button" value="SUBMIT" onclick="c()">
+<input id="sub" type="button" value="SUBMIT" onclick="signup()">
 <br><br><br>
 <a href="/Coding-Academy/web.html">
 <input id="bu" type="button" value="SIGN IN" disabled> </a>
 <br><br>
+</div>
+<h4>Already on Coding Academy? <a href="/Coding-Academy/signin.html" style="color:#00cc66;">Sign in</a></h4>
 <script>
 
-function c() {
+function signup() {
    var a = document.getElementById("fn").value;
-   var b = document.getElementById("ln").value;
    var c = document.getElementById("d").value;
    var d = document.getElementById("ema").value;
    var e = document.getElementById("pa").value;
    var f = document.getElementById("sub");
    if (a == "") {
-       alert("Enter your First Name!");
-   }
-   else if (b == "") {
-       alert("Enter your Last Name!");
+       alert("Enter your Full Name!");
    }
    else if (c == "") {
        alert("Enter your Date of Birth!");
