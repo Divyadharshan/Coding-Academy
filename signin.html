@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <title>Coding Academy</title>
+<style>
+h1,h2,h4,label {
+   color : white;
+   text-align : center;
+}
+body {
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtOkYs3YtPcFOhw-LgDDgxwhSBq5N0jn7T35EMXBx6gy9WKrOcpUcTOB73&s=10");
+  background-attachment:fixed;
+  background-size:100%100%;
+  backdrop-filter:blur(0.5px)
+}
+</style>
+
+</head>
+
+
+<body>
+<h1>Coding Academy<sup>&reg;</sup></h1>
+<h4><marquee> * An Initiative By S.Divyadharshan * We build super-coders * Learn coding at low cost * Learn Coding * </marquee></h4>
+<br>
+<h2>Welcome Back</h2>
+<form>
+<div style="text-align:center">
+<label>E-MAIL : <br><input type="email" placeholder="name@email.com" id="fn"></label>
+<br><br>
+<label>PASSWORD : <br><input type="password" placeholder="Enter Your Password" id="p"></label>
+<br><br>
+<a href="#" id="link">
+<input type="button" id="sub" value="SIGN IN" onclick="signin()"></a>
+<h4>New to Coding Academy? <a href="/Coding-Academy/index.html" style="color:#00cc66 ;">Sign up</a></h4>
+
+<script>
+function signin(){
+   var f = document.getElementById("fn").value;
+   var pa = document.getElementById("p").value;
+   var l = document.getElementById("link");
+   
+   if (f==""){
+        alert("Enter your registered E-Mail!");
+   }
+   else if (pa=="") {
+        alert("Enter your password!");
+   }
+   else{
+         l.href="/Coding-Academy/web.html";
+   }
+
+}
+</script>
+</form>
+</body>
+</html>
